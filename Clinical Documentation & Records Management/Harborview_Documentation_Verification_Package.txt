@@ -1,0 +1,192 @@
+DOCUMENTATION VERIFICATION PACKAGE
+Harborview Primary Care Clinic — Morning Session
+
+Prepared by: Documentation Quality Coordinator, Harborview Primary Care Clinic
+Date: Wednesday, July 29, 2026 (morning clinic session, Dr. Patel)
+
+========================================================================
+COMPONENT 1: CAPTURE CONFIGURATION PLAN
+========================================================================
+
+ENCOUNTER 1 — ROBERT KLEIN, 8:00 AM
+Visit Type: Annual Wellness Visit (routine preventive exam; no acute concerns reported)
+Capture Settings:
+  - Note template: Comprehensive preventive/wellness template with Health Maintenance (screenings, immunizations) and Preventive Counseling sections enabled.
+  - ROS / exam scope: Full multi-system ROS and complete multi-system exam.
+  - Detail level: Detailed, with an extended capture window for the longest visit of the session.
+  - Pre-visit context: Problem list, medication list, and screening/immunization history linked before the visit.
+  - Section routing: Screening orders and counseling to Health Maintenance/Plan; Chief Complaint set to routine preventive visit.
+Reasoning: A wellness visit moves across many body systems and topics, and most of the conversation is pertinent negatives; a focused ROS would drop them. Screening and preventive counseling are the core deliverables of this visit type, so dedicated sections keep them from being scattered through the HPI. With no acute complaint, the Chief Complaint must reflect the preventive purpose rather than an incidental remark.
+Encounter 1 was reviewed and signed earlier this session, so it is configured here but falls outside the Component 2 verification scope.
+
+ENCOUNTER 2 — MARIA CHEN, 8:40 AM
+Visit Type: Acute Care Visit (sore throat and fever for three days; rule out streptococcal pharyngitis)
+Capture Settings:
+  - Note template: Problem-focused acute (SOAP) template for a single problem.
+  - ROS / exam scope: Focused: constitutional, ENT, respiratory, skin, lymphatic; pertinent positives and negatives captured explicitly.
+  - Detail level: Concise.
+  - HPI priorities: Onset and duration, maximum temperature, aggravating factors, treatments tried, sick contacts/exposures.
+  - Section routing: Point-of-care test orders, conditional (if positive / if negative) treatment branches, and patient counseling to Plan.
+Reasoning: An acute visit is short and narrow, and the diagnosis turns on a few pertinent findings (fever, tonsillar exudate, tender cervical nodes, absence of cough), so each must be captured with the correct positive/negative status. Exposure history raises the pre-test probability of strep and must be prompted for in the HPI. The same-day rapid test creates a branching plan that must be recorded exactly, and counseling given at the end of a brief visit is easily misrouted.
+Verification focus carried into Component 2: positive/negative status of findings, exposure history, plan branches and counseling placement.
+
+ENCOUNTER 3 — JAMES OKAFOR, 9:20 AM
+Visit Type: Follow-up Consultation (three-month reassessment of type 2 diabetes and hypertension)
+Capture Settings:
+  - Note template: Chronic-care follow-up template with problem-based Assessment and Plan (one entry per problem).
+  - Pre-visit context: Prior plan, most recent HbA1c and metabolic panel, and current medication list linked before the visit.
+  - HPI priorities: Home glucose and blood pressure readings recorded verbatim, medication adherence, new interval symptoms.
+  - Exam scope: Targeted vitals and BMI plus diabetic foot exam captured as discrete elements (monofilament, skin integrity, pedal pulses).
+  - Section routing: Assessment limited to diagnoses and status; orders, referrals, and education to Plan.
+Reasoning: A follow-up visit is measured against prior data, so home readings and doses must be transcribed exactly and compared with the last plan. The most important content is often a new symptom mentioned briefly among routine reporting, so new-symptom capture is prioritized. Foot-exam elements are discrete normal/abnormal findings with different implications (intact pulses point to neuropathy rather than vascular disease). With several problems discussed, problem-based Assessment and Plan with strict routing keeps orders and referrals out of the Assessment.
+Verification focus carried into Component 2: verbatim home values, new interval symptoms, discrete foot-exam findings, routing of orders and referrals to Plan.
+
+========================================================================
+COMPONENT 2: SECTION-LEVEL VERIFICATION REVIEWS
+========================================================================
+
+Scope and method: Encounters 2 and 3 (Encounter 1 was signed earlier and is excluded). Each draft section was compared, in note order, with the matching source items, then every source item was traced to a note section to detect omissions. The Component 1 focus checks were applied to each note.
+
+Classification rule: Omission = source item absent from the note. Inaccuracy = a source item recorded with a changed value or status. Addition = a finding or statement the encounter does not support, including invented findings with their own descriptors where the source recorded none. Structural deviation = content placed in the wrong section. Severity (High/Moderate/Low) reflects potential clinical impact. “Linked” entries are downstream effects of another entry and are counted once in Component 3.
+
+ENCOUNTER 2 — VERIFICATION REVIEW (MARIA CHEN, ACUTE CARE VISIT)
+
+Chief Complaint | Verified
+  Discrepancy: None. Matches source (sore throat and fever for three days).
+  Classification: —
+  Correction Recommended: None.
+
+History of Present Illness | Discrepancy (Moderate)
+  Discrepancy: E2-1: Household exposure omitted. Source: son diagnosed with strep throat last week; possible exposure.
+  Classification: Omission
+  Correction Recommended: Add: “Son diagnosed with streptococcal pharyngitis last week; possible household exposure.”
+
+History of Present Illness | Discrepancy (Low)
+  Discrepancy: E2-2: “Recommend rest, fluids, and analgesics as needed for symptom control” is plan content placed in the HPI.
+  Classification: Structural Deviation
+  Correction Recommended: Delete from HPI and relocate to Plan (see E2-7).
+
+Review of Systems | Discrepancy (High)
+  Discrepancy: E2-3: Cough listed as positive. Source: patient denies cough. Also contradicts the note’s own HPI.
+  Classification: Inaccuracy
+  Correction Recommended: Move cough to negatives: “Negative for cough and congestion.”
+
+Review of Systems | Discrepancy (Low)
+  Discrepancy: E2-4: “Negative for rash.” Source records absence of rash only as an exam observation, not as a patient-reported symptom.
+  Classification: Structural Deviation
+  Correction Recommended: Provider to confirm whether rash was asked about; if not, remove from ROS and document “No rash” under Physical Examination.
+
+Physical Examination | Discrepancy (High)
+  Discrepancy: E2-5: “Mild rash noted on trunk.” Source: no rash observed. Also contradicts the note’s own ROS.
+  Classification: Addition
+  Correction Recommended: Replace with “No rash.” Remaining findings (temp 100.9°F, tonsillar exudate, tender cervical nodes, lungs clear) verified.
+
+Assessment | Verified
+  Discrepancy: None. Suspected streptococcal pharyngitis with rapid strep test ordered matches source.
+  Classification: —
+  Correction Recommended: None.
+
+Plan | Discrepancy (Moderate)
+  Discrepancy: E2-6: States rapid strep test “performed in office.” Source records the test as ordered; no result is documented. Inconsistent with the note’s Assessment (“ordered”).
+  Classification: Inaccuracy
+  Correction Recommended: Change to “Rapid strep test ordered”; provider to document result before signing.
+
+Plan | Discrepancy (Moderate)
+  Discrepancy: E2-7 (linked to E2-2): Supportive-care counseling missing from Plan. Source: rest, fluids, OTC acetaminophen or ibuprofen for comfort.
+  Classification: Omission
+  Correction Recommended: Add: “Rest, fluids, OTC acetaminophen or ibuprofen for comfort.” Amoxicillin branches and 5-day return precautions verified.
+
+ENCOUNTER 3 — VERIFICATION REVIEW (JAMES OKAFOR, FOLLOW-UP CONSULTATION)
+
+Chief Complaint | Verified
+  Discrepancy: None. Matches source (follow-up for type 2 diabetes and hypertension).
+  Classification: —
+  Correction Recommended: None.
+
+History of Present Illness | Discrepancy (High)
+  Discrepancy: E3-1: “Reports occasional chest tightness with exertion.” Source: patient denies chest pain or chest tightness.
+  Classification: Addition
+  Correction Recommended: Replace with “Denies chest pain or chest tightness.”
+
+History of Present Illness | Discrepancy (High)
+  Discrepancy: E3-2: New mild numbness in toes over the past month omitted.
+  Classification: Omission
+  Correction Recommended: Add: “Reports new mild numbness in toes over the past month.” Glucose, hypoglycemia, metformin adherence, and home BP verified.
+
+Review of Systems | Discrepancy (High)
+  Discrepancy: E3-3 (linked to E3-1): “Positive for occasional chest tightness.” Source: denied.
+  Classification: Addition
+  Correction Recommended: Remove from positives; record “Negative for chest pain and chest tightness.”
+
+Review of Systems | Discrepancy (Moderate)
+  Discrepancy: E3-4 (linked to E3-2): Toe numbness absent from ROS.
+  Classification: Omission
+  Correction Recommended: Add “Positive for numbness in toes.”
+
+Review of Systems | Discrepancy (Low)
+  Discrepancy: E3-5: “Negative for polyuria, polydipsia.” Not discussed in source.
+  Classification: Addition
+  Correction Recommended: Remove unless provider confirms these were asked. Vision changes negative verified.
+
+Physical Examination | Discrepancy (High)
+  Discrepancy: E3-6: “Pulses diminished bilaterally.” Source: pedal pulses intact bilaterally.
+  Classification: Inaccuracy
+  Correction Recommended: Change to “Pedal pulses intact bilaterally.” Vitals, BMI, monofilament, and no-ulcer findings verified.
+
+Assessment | Discrepancy (Moderate)
+  Discrepancy: E3-7: “Referral to podiatry for neuropathy evaluation recommended” is a plan action placed in the Assessment.
+  Classification: Structural Deviation
+  Correction Recommended: Remove from Assessment and record in Plan (see E3-10). “New finding of peripheral neuropathy” verified.
+
+Assessment | Discrepancy (Low)
+  Discrepancy: E3-8: Diabetes described as “suboptimal control.” No control status stated in source.
+  Classification: Addition
+  Correction Recommended: Provider to confirm or remove.
+
+Assessment | Discrepancy (Low)
+  Discrepancy: E3-9: Hypertension described as “borderline controlled.” No control status stated in source.
+  Classification: Addition
+  Correction Recommended: Provider to confirm or remove.
+
+Plan | Discrepancy (Moderate)
+  Discrepancy: E3-10 (linked to E3-7): Podiatry referral absent from Plan.
+  Classification: Omission
+  Correction Recommended: Add: “Refer to podiatry for neuropathy evaluation.” HbA1c/CMP, lisinopril 10 mg daily, foot-care education, and 3-month follow-up verified.
+
+========================================================================
+COMPONENT 3: QUALITY EVALUATION SUMMARY
+========================================================================
+
+Evidence base: 17 entries across 12 reviewed sections; 13 distinct discrepancies once linked entries are counted once. Sections verified without discrepancy: 3 of 12 (Encounter 2 Chief Complaint and Assessment; Encounter 3 Chief Complaint). Distinct discrepancies by type: Addition 5, Inaccuracy 3, Structural Deviation 3, Omission 2. Five are rated High severity.
+
+CLINICAL ACCURACY
+Rating: Not Met
+Supporting Observation: Eight distinct discrepancies (3 inaccuracies, 5 additions) change the clinical record, and four High-severity discrepancies turn a documented negative or normal finding into a positive or abnormal one: cough (E2-3), truncal rash (E2-5), exertional chest tightness (E3-1/E3-3), and diminished pedal pulses (E3-6). If signed, these would remove a strep diagnostic criterion, suggest scarlet fever or confuse assessment of any later amoxicillin rash, document an unaddressed anginal-type symptom in a diabetic patient, and imply peripheral arterial disease.
+
+COMPLETENESS
+Rating: Partially Met
+Supporting Observation: Most source content was captured correctly, including all vital signs, home readings, medication doses, and the conditional antibiotic plan. However, each note omitted its most decision-relevant history item, the household strep exposure (E2-1) and the new toe numbness that supports the neuropathy diagnosis (E3-2), and each Plan is missing a discussed item (E2-7, E3-10).
+
+STRUCTURAL CONSISTENCY
+Rating: Partially Met
+Supporting Observation: Both notes use the expected six-section structure in the correct order for their visit types. However, both placed plan content outside the Plan, with counseling in the HPI (E2-2) and the podiatry referral in the Assessment (E3-7), and the Encounter 2 ROS includes an exam-only finding (E2-4).
+
+IMPROVEMENT RECOMMENDATION 1 (PRIMARY)
+Pattern Identified: Reversal of documented negative or normal findings. Four distinct discrepancies (five entries) convert a negative or normal finding into a positive or abnormal one: E2-3, E2-5, E3-1/E3-3, E3-6. They occur in both notes and in three section types (HPI, ROS, Physical Examination), all are rated High severity, and two (E2-3, E2-5) make the draft contradict itself.
+Why It Matters: A false positive finding is harder to catch than a gap because it reads as plausible clinical content, and once signed it becomes part of the legal medical record. These entries alter diagnostic criteria, document symptoms that have no matching assessment or plan (a compliance and liability gap), and could appear to support diagnoses or services the encounter did not justify.
+Proposed Corrective Action:
+  1. Add a mandatory pre-signature step: the provider checks every positive symptom and abnormal exam finding against the encounter evidence, starting with the items flagged in Component 1 (cough and rash for acute visits; chest pain, numbness, and pedal pulses for chronic-care follow-ups).
+  2. Add a contradiction screen to the quality team’s review that flags any finding recorded as both present and absent in the same note (this would have caught E2-3 and E2-5).
+  3. Audit all Dragon Copilot notes for these reversals for 30 days, report the rate to the clinic director, and send examples to the configuration owner; then move to a 10% weekly sample once four consecutive weeks show no reversals.
+
+IMPROVEMENT RECOMMENDATION 2
+Pattern Identified: Plan items placed outside the Plan section in both notes: counseling in the HPI (E2-2/E2-7) and the podiatry referral in the Assessment (E3-7/E3-10).
+Why It Matters: Staff act on orders and referrals from the Plan. A referral listed only in the Assessment may never be placed, and counseling missing from the Plan may not reach the patient’s visit instructions.
+Proposed Corrective Action: Enforce the Component 1 routing setting (orders, referrals, and counseling go to Plan only) on all templates, and add a review step that matches each item in the source’s “Assessment and Plan Discussed” list to a line in the Plan before signing.
+
+========================================================================
+CROSS-COMPONENT CONSISTENCY CHECK
+========================================================================
+- Component 1 → 2: The focus checks applied in each review come from that encounter’s capture settings, and the findings cluster in exactly those areas: finding status and exposure history (Encounter 2); new interval symptoms, foot-exam findings, and referral routing (Encounter 3). Encounter 1 is configured but not verified because it was signed earlier.
+- Component 2 → 3: Every rating cites entry IDs from the verification tables, and counts treat linked entries once.
+- Component 3 → 1: Recommendation 1 targets the findings prioritized in the Component 1 settings, and Recommendation 2 enforces the Component 1 routing setting.

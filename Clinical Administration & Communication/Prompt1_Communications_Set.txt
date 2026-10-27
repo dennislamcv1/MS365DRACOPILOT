@@ -1,0 +1,83 @@
+PROMPT 1—COMMUNICATIONS SET
+Contoso Family Health | Clinical Office Coordinator | Tuesday, before 8:30 AM
+
+============================================================
+MESSAGE A—PATIENT APPOINTMENT FOLLOW-UP
+============================================================
+
+Channel: Patient portal (secure message)
+To: J. Osei
+Subject: Next steps for your lab tests from Monday's visit
+
+Hello J. Osei,
+
+Thank you for coming in for your wellness visit on Monday. At checkout, you asked whether you need to do anything before your results come back. Here's what to know.
+
+Your lab tests are ordered. Your provider ordered two blood tests:
+  - A cholesterol test (also called a lipid panel)
+  - A blood sugar test called an A1c, which shows your average blood sugar over the past 2–3 months
+
+If you haven't had your blood drawn yet:
+  - Fast for 10–12 hours before your blood draw. That means no food and no drinks except plain water.
+  - An early-morning appointment makes this easier. For example, for an 8:00 AM blood draw, finish eating between 8:00 PM and 10:00 PM the night before.
+  - Not sure whether to take your usual medicines that morning? Reply to this message before your draw and we'll let you know.
+
+If you've already had your blood drawn, you're all set. There's nothing else you need to do.
+
+What happens next: Results are usually ready 2–3 days (48–72 hours) after your blood draw. Once they're in, a member of your care team will contact you to go over them.
+
+Questions in the meantime? Just reply to this message here in the portal.
+
+Warm regards,
+Your Care Team at Contoso Family Health
+
+Annotation: I replaced Copilot's clinical terms ("fasting lipid panel," "HbA1c") with plain-language descriptions and turned its general "please remember to fast" line into specific steps (what fasting means, a timing example, and an "already had your blood drawn" path), guided by the plain-language and action-specificity standards. I also removed the date of birth Copilot carried over from the prompt (minimum necessary PHI) and kept results timing as a range rather than a promised date.
+
+
+============================================================
+MESSAGE B—INTERNAL ROUTING MESSAGE
+============================================================
+
+Channel: Outlook (internal, marked High Importance)
+To: Dr. Fernandez
+Subject: Sign-off needed before rounds end – M. Solis note (cardiology referral on hold)
+
+Dr. Fernandez,
+
+The encounter note for M. Solis (Monday, hypertension follow-up) is pending your sign-off in the EHR.
+
+The cardiology referral is on hold until the note is finalized. The cardiology consult request we received by fax last night requires the signed note attached before we can route it.
+
+Please sign the note before rounds conclude this morning. As soon as it's signed, I'll submit the referral and confirm with you. If you can't get to it before rounds end, please reply with a time that works so I can update the cardiology office.
+
+Thank you,
+Clinical Office Coordinator
+Contoso Family Health
+
+Annotation: I cut Copilot's polite opening and background recap down to a subject line that carries the request and deadline, plus three short paragraphs that lead with the action, and added a fallback ask in case sign-off can't happen before rounds end, guided by the standard for tone with a clinical audience (direct, brief, time-aware). I also trimmed patient details to the minimum Dr. Fernandez needs to find the note (name, visit date, visit type).
+
+
+============================================================
+MESSAGE C—SCHEDULING TEAM STATUS UPDATE
+============================================================
+
+Channel: Microsoft Teams (Scheduling team group chat)
+
+PRIORITY: Fill today's 9:30 AM slot before huddle
+
+Good morning, team. Three appointment slots opened yesterday due to cancellations:
+  1. Today (Tuesday) 9:30 AM: PRIORITY. This needs to be filled before the morning huddle.
+  2. Wednesday 3:15 PM
+  3. Monday 2:00 PM. Quick check: if this is yesterday's slot, it has already passed. Please confirm whether it's next Monday and still open before offering it.
+
+Two patients are on the open-slot waitlist. Has anyone contacted either of them yet?
+
+Please reply here with:
+  - Which waitlisted patient(s) have been contacted (or "none yet")
+  - Whether today's 9:30 AM slot is booked
+
+If neither patient can take 9:30 AM, flag it here before huddle so we can decide how to fill it.
+
+Thanks!
+
+Annotation: I reordered Copilot's chronological list so today's 9:30 AM slot leads with its huddle deadline, and replaced a generic "let me know if there are updates" close with two specific reply items, guided by the action-specificity standard. I also flagged that a "Monday 2:00 PM" slot that opened yesterday may already have passed, so the team confirms it before offering it to a waitlisted patient.

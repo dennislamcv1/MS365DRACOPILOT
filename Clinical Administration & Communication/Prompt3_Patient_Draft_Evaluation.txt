@@ -1,0 +1,91 @@
+PROMPT 3—PATIENT DRAFT EVALUATION
+Patient: E. Pham | Copilot-generated visit summary, diabetes management visit | Contoso Family Health
+
+============================================================
+ANNOTATED ORIGINAL
+============================================================
+
+Key: R = Readability · E = Empathy · A = Action clarity. Each issue is labeled directly beneath the text it refers to. Criteria are applied in order: readability, then empathy, then action clarity.
+
+AI-GENERATED DRAFT—FOR REVIEW ONLY—DO NOT RELEASE WITHOUT REVISION
+
+Subject: Summary of Your Visit on Monday
+   >> [A1 | ACTION CLARITY] Generic subject line gives no hint that the message contains results and next steps, so the patient may not open it or be able to find it later in the portal.
+
+Dear Patient,
+   >> [E1 | EMPATHY] Generic salutation reads like a form letter. The patient should be addressed by name (E. Pham).
+
+This message is to inform you that you were seen on Monday for management of your Type 2 diabetes mellitus (T2DM) condition.
+   >> [R1 | READABILITY] "Diabetes mellitus" and the acronym "T2DM" are clinical terms. "Type 2 diabetes" is all the patient needs.
+   >> [E2 | EMPATHY] Cold, bureaucratic opening in passive voice. There is no thanks for coming in and no acknowledgment of the daily work of managing diabetes.
+
+Your hemoglobin A1c (HbA1c) was recorded at 8.4%, which is above the recommended threshold of 7.0%, indicating suboptimal glycemic control.
+   >> [R2 | READABILITY] A1c is named but never explained, so "8.4%" means nothing to the patient. It needs a plain definition: average blood sugar over the past 2–3 months.
+   >> [R3 | READABILITY] "Threshold," "suboptimal" and "glycemic control" are clinical language.
+   >> [E3 | EMPATHY] "Suboptimal" reads like a failing grade. Nothing reassures the patient that the number can improve or that the care team will help.
+
+Your current pharmacological regimen was reviewed, and metformin was maintained at its current dosage.
+   >> [R4 | READABILITY] "Pharmacological regimen" and "maintained at its current dosage" are jargon, and the passive voice hides who did what.
+   >> [A2 | ACTION CLARITY] Never tells the patient directly what to do: keep taking metformin the same way.
+
+An additional oral hypoglycemic agent may be considered at the next visit if targets are not met.
+   >> [R5 | READABILITY] "Oral hypoglycemic agent" means a diabetes pill, and "targets" is never defined.
+   >> [E4 | EMPATHY] Framed as a consequence of failing ("if targets are not met"), which can cause worry. It should read as an option the patient and provider would discuss together.
+
+Your blood pressure was within normal limits.
+   >> [R6 | READABILITY] "Within normal limits" is chart language. "In a healthy range" is clearer.
+   >> [E5 | EMPATHY] Good news is stated flatly, missing a chance to give the patient positive feedback.
+
+Your BMI was noted in the record.
+   >> [R7 | READABILITY] "BMI" is an unexplained acronym, and the sentence gives the patient no usable information.
+   >> [E6 | EMPATHY] A bare mention of weight with no context can feel judgmental. Remove it unless the provider wants it explained.
+
+You have been instructed to continue your current dietary plan and increase physical activity.
+   >> [E7 | EMPATHY] "You have been instructed" sounds like an order handed down rather than a plan made together.
+   >> [A3 | ACTION CLARITY] "Increase physical activity" is too vague to act on: no example, no starting point and no offer of help.
+
+A follow-up appointment has been scheduled for 90 days.
+   >> [A4 | ACTION CLARITY] No date, time or place to find them, and "for 90 days" reads like a length of time rather than when the visit is. The patient also isn't told what to do if the time doesn't work.
+   >> [A5 | ACTION CLARITY] The patient's to-dos (medicine, eating plan, activity, follow-up) are scattered across three paragraphs instead of one clear list.
+
+If you have questions, contact the office.
+   >> [A6 | ACTION CLARITY] No phone number, portal reply option or hours, and no guidance on what to do for urgent needs.
+
+Contoso Family Health
+   >> [E8 | EMPATHY] Abrupt close signed by an institution, with no care team named and no invitation to reach out. It feels impersonal.
+
+Issues found: 21 (Readability 7, Empathy 8, Action clarity 6).
+
+
+============================================================
+REVISED VERSION (READY FOR PATIENT PORTAL RELEASE)
+============================================================
+
+Subject: Your diabetes visit on Monday: results and next steps
+
+Hello E. Pham,
+
+Thank you for coming in on Monday to check on your type 2 diabetes. Managing diabetes takes effort every day, and we're glad to be working on it with you. Here's a summary of your visit and what comes next.
+
+YOUR A1C RESULT
+Your A1c was 8.4%. This blood test shows your average blood sugar over the past 2–3 months. The recommended goal is below 7%, so your blood sugar has been running higher than we'd like. A1c can come down over time, and we'll keep working on it with you.
+
+YOUR MEDICINE
+We reviewed your medicines, and your metformin dose is staying the same. If your A1c is still above goal at your next visit, your provider may talk with you about adding another diabetes pill. You and your provider will decide on that together.
+
+YOUR BLOOD PRESSURE
+Your blood pressure was in a healthy range. That's good news!
+
+YOUR NEXT STEPS
+  1. Keep taking metformin the same way you do now.
+  2. Keep following your current eating plan.
+  3. Be more physically active, for example by adding a walk to your day. If you'd like help choosing a goal that's right for you, just reply to this message.
+  4. Come to your follow-up visit in about 3 months. It's already booked, and you'll find the date and time under Appointments in your patient portal. If that time doesn't work, reply to this message and we'll help you find a new one.
+
+QUESTIONS?
+Reply to this message here in the portal, and a member of your care team will get back to you. Please don't use portal messages for urgent needs. If you think you are having a medical emergency, call 911.
+
+We look forward to seeing you at your next visit.
+
+Warm regards,
+Your Care Team at Contoso Family Health

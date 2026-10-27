@@ -1,0 +1,33 @@
+PROMPT 2—PRIORITIZED QUEUE
+Contoso Family Health | Clinical Office Coordinator | Tuesday, before 8:30 AM
+
+REORDERED QUEUE
+
+1. Patient portal message from C. Nguyen requesting an appointment for a new concern; patient marked the request as urgent (Queue #7, arrived 11:47 PM Mon)—Classification: Immediate—Dependency: Yes—how soon C. Nguyen is booked depends on nurse triage of the concern; the coordinator does not judge clinical urgency—Action Owner: Triage nurse (clinical review), then Scheduling team (books per nurse direction)—Next Step: Forward to the triage nurse as soon as the inbox opens; the nurse contacts the patient and sets the appointment timeframe, and Scheduling books it
+
+2. Fax: cardiology consult request for M. Solis; requires the attached EHR note before routing, and the note is pending provider sign-off (Queue #2, arrived 7:02 PM Mon)—Classification: Immediate—Dependency: Yes—cannot be routed until Dr. Fernandez signs the M. Solis encounter note (sign-off requested in Message B)—Action Owner: Dr. Fernandez (sign-off), then Clinical Office Coordinator (routing)—Next Step: Send Message B before rounds; hold the fax; once the note is signed, attach it, route the consult request and confirm with Dr. Fernandez
+
+3. System notification: the Tuesday 9:30 AM slot has not been filled; two patients are on the open-slot waitlist (Queue #10, arrived 6:00 AM Tue)—Classification: Immediate—Dependency: Yes—filling the slot depends on the scheduling team confirming whether either waitlisted patient has been contacted (requested in Message C)—Action Owner: Scheduling team; Clinical Office Coordinator confirms status before huddle—Next Step: Send Message C; confirm before the morning huddle whether a waitlisted patient has accepted the 9:30 AM slot and report status at huddle
+
+4. Pharmacy voicemail: prescription renewal for L. Brooks; prescriber needs to authorize (Queue #8, arrived 12:03 AM Tue)—Classification: Immediate—Dependency: Yes—the pharmacy cannot fill the renewal until the prescriber authorizes it—Action Owner: Prescribing provider; Clinical Office Coordinator routes it to the provider's EHR in-basket—Next Step: Route to the prescriber's in-basket before 8:30 AM so it is waiting on arrival, with the pharmacy's callback details and anything the voicemail said about the patient's remaining supply
+
+5. Reminder alert: referral for D. Kim submitted Friday is awaiting specialist confirmation; follow-up due today (Queue #6, arrived 11:00 PM Mon)—Classification: Time-Bound—Dependency: Yes—closing the referral depends on confirmation from the specialist's office (external)—Action Owner: Clinical Office Coordinator (referral follow-up)—Next Step: Call the specialist's office this morning to confirm receipt and appointment status; update the referral record, and resend or escalate if it was not received
+
+6. Encounter note for A. Rowe from Monday's visit is complete and ready for provider review and sign-off (Queue #9, arrived 1:15 AM Tue)—Classification: Time-Bound—Dependency: Yes—anything downstream of this note (claims, orders, referrals) waits on provider sign-off—Action Owner: A. Rowe's treating provider; Clinical Office Coordinator routes it to the sign-off queue—Next Step: Place in the provider's EHR sign-off queue for review today, so it does not become a blocked item like the M. Solis note; recheck before end of day
+
+7. Insurance pre-authorization request for a routine imaging order; deadline is end of business Wednesday (Queue #3, arrived 7:45 PM Mon)—Classification: Time-Bound—Dependency: No—but confirm the supporting clinical documentation is signed before submitting—Action Owner: Prior-authorization coordinator (Clinical Office Coordinator if no dedicated role)—Next Step: Start today: gather the imaging order and supporting documentation and submit, leaving time for payer questions before Wednesday's deadline
+
+8. Patient portal message from T. Adebayo asking for a copy of their most recent lab results (Queue #4, arrived 8:30 PM Mon)—Classification: Deferrable—Dependency: No—verify the patient's identity and confirm the results have been released before sending—Action Owner: Medical records / Clinical Office Coordinator—Next Step: Reply later today: send a copy through the portal or direct the patient to the results already posted there
+
+9. Internal message from the billing team requesting clarification on a procedure code from last Thursday's encounter (Queue #5, arrived 9:11 PM Mon)—Classification: Deferrable—Dependency: No—but the answer must come from the treating provider or coder; the coordinator does not change codes—Action Owner: Billing team with the treating provider / certified coder—Next Step: Acknowledge billing's message and forward the question to the treating provider or coder this week
+
+10. Voicemail from R. Yuen requesting a callback to reschedule a non-urgent annual wellness visit (Queue #1, arrived 6:14 PM Mon)—Classification: Deferrable—Dependency: No—Action Owner: Scheduling team (front desk)—Next Step: Call R. Yuen back later today or tomorrow to reschedule
+
+
+RATIONALE FOR TOP 3 DECISIONS
+
+- Item ranked #1 (C. Nguyen, urgent new concern): C. Nguyen marked the request urgent, and it has been unanswered since 11:47 PM. A portal message cannot tell me whether a new concern is clinically urgent, and that is not a coordinator's call, so it goes to the triage nurse first. It is the only item in the queue where delay could directly harm a patient, and the hand-off takes a minute.
+
+- Item ranked #2 (M. Solis, cardiology consult pending sign-off): This item has the earliest hard deadline: Dr. Fernandez is on rounds at St. Carmel Regional and needs to sign before rounds conclude, and both the cardiology referral and the faxed consult request are blocked until then. Sending Message B first gives the provider the full window to sign; missing it could hold up the referral until Dr. Fernandez is next available.
+
+- Item ranked #3 (Tuesday 9:30 AM open slot): The 9:30 AM slot must be filled before the morning huddle and is lost an hour after the provider arrives, so it has a fixed same-morning deadline. Filling it from the waitlist gets a waiting patient seen and protects provider time. It ranks below the first two because a missed slot is an operational loss, not a clinical or care-coordination risk.
